@@ -1,0 +1,1 @@
+--INSERT INTO reviews ('id', 'productId' , 'averageReviewScore','numberOfReviews') VALUES(1, 'M20324', 1.33, 12344)
