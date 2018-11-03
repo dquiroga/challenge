@@ -1,5 +1,6 @@
 package com.adidas.gateway;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -10,6 +11,12 @@ import reactor.core.publisher.Mono;
 
 @SpringBootApplication
 public class GetewayApplication {
+  @Value("${adidas.challenge.service.reviews.host}")
+  private String reviewEnpoint;
+
+  @Value("${adidas.challenge.service.product.host}")
+  private String productEnpoint;
+
   public static void main(String[] args) {
     SpringApplication.run(GetewayApplication.class, args);
   }
@@ -20,11 +27,11 @@ public class GetewayApplication {
         .route(p -> p
             .path("/review/**")
             .filters(f->f.rewritePath("/review/(?<segment>.*)","/review/${segment}"))
-            .uri("http://localhost:8200"))
+            .uri(reviewEnpoint))
         .route(p -> p
-            .path("/product/**")
-            .filters(f->f.rewritePath("/product/(?<segment>.*)","/product/${segment}"))
-            .uri("http://localhost:8100").id("router"))
+            .path("/products/**")
+            .filters(f->f.rewritePath("/products/(?<segment>.*)","/products/${segment}"))
+            .uri(productEnpoint))
         .build();
   }
 
