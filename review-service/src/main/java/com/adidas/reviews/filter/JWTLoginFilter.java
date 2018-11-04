@@ -1,7 +1,8 @@
 package com.adidas.reviews.filter;
 
-import com.adidas.reviews.service.TokenAuthenticationService;
 import com.adidas.reviews.service.impl.TokenAuthenticationServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -18,6 +19,8 @@ import java.util.Collections;
 
 public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
 
+  private static final Logger logger = LoggerFactory.getLogger(JWTLoginFilter.class);
+
   public JWTLoginFilter(String url, AuthenticationManager authManager) {
     super(new AntPathRequestMatcher(url));
     setAuthenticationManager(authManager);
@@ -29,10 +32,7 @@ public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
 
     String username = request.getParameter("username");
     String password = request.getParameter("password");
-
-    System.out.printf("JWTLoginFilter.attemptAuthentication: username/password= %s,%s", username, password);
-    System.out.println();
-
+    logger.info("JWTLoginFilter.attemptAuthentication: username/password= {}, {}", username, password);
     return getAuthenticationManager()
         .authenticate(new UsernamePasswordAuthenticationToken(username, password, Collections.emptyList()));
   }
@@ -40,15 +40,10 @@ public class JWTLoginFilter extends AbstractAuthenticationProcessingFilter {
   @Override
   protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain,
                                           Authentication authResult) throws IOException, ServletException {
-
-    System.out.println("JWTLoginFilter.successfulAuthentication:");
-
-    // Write Authorization to Headers of Response.
+    logger.info("JWTLoginFilter.successfulAuthentication!");
     TokenAuthenticationServiceImpl.addAuthentication(response, authResult.getName());
-
     String authorizationString = response.getHeader("Authorization");
-
-    System.out.println("Authorization String=" + authorizationString);
+    logger.info("Authorization String => {}", authorizationString);
   }
 
 }

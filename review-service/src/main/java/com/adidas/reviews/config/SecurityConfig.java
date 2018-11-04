@@ -21,10 +21,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
+    http.headers().frameOptions().disable();
     http.csrf().disable().authorizeRequests()
-        .antMatchers("/swagger","/webjars/**","/swagger-ui.html", "/swagger-resources/**", "/v2/api-docs" ).permitAll() //
+        .antMatchers("/swagger","/h2-console/**","/webjars/**","/swagger-ui.html", "/swagger-resources/**", "/v2/api-docs" ).permitAll() //
         .antMatchers(HttpMethod.POST, "/login").permitAll()
         .antMatchers(HttpMethod.GET, "/review/**").permitAll()
+        .antMatchers(HttpMethod.GET, "/h2-console/**").permitAll()
         .anyRequest().authenticated()
         .and()
         .addFilterBefore(new JWTLoginFilter("/login", authenticationManager()),
