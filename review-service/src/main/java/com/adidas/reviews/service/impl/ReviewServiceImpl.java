@@ -40,14 +40,14 @@ public class ReviewServiceImpl implements ReviewService {
   @Transactional
   public void deleteReviewByProductId(String productId) throws ReviewNotFoundException {
     logger.info("DELETE review object with product id {}", productId);
-    repository.findReviewByProductId(productId).orElseThrow(() ->new ReviewNotFoundException("Could not find entity with id: " + productId));
+    repository.findReviewByProductId(productId).orElseThrow(() -> new ReviewNotFoundException("Could not find entity with id: " + productId));
     repository.deleteReviewByProductId(productId);
   }
 
   @Override
   @Transactional
   public Review updateReview(Review review) throws ReviewNotFoundException {
-    logger.info("DELETE review objecet with product id {}", review.getProductId());
+    logger.info("UPDATE review object with product id {}", review.getProductId());
     Review reviewToUpdate = repository.findReviewByProductId(review.getProductId())
         .orElseThrow(() -> new ReviewNotFoundException("Could not find entity with id: " + review.getProductId()));
 

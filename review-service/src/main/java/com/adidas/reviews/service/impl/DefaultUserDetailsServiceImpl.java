@@ -27,7 +27,7 @@ public class DefaultUserDetailsServiceImpl implements UserDetailsService {
   @Override
   public UserDetails loadUserByUsername(String username) {
     logger.info("Get user data with USERNAME {}", username);
-    com.adidas.reviews.model.User user = repository.findByUsername(username);
+    com.adidas.reviews.model.User user = repository.findByUsername(username).orElse(null);
     if (user == null) {
       throw new UsernameNotFoundException(username);
     }

@@ -9,7 +9,8 @@ import java.util.Optional;
 
 @Repository
 public interface ReviewRepository extends CrudRepository<Review, Long> {
-  Integer deleteReviewByProductId(String productId);
+
+  void deleteReviewByProductId(String productId);
 
   @Override
   Optional<Review> findById(Long aLong);

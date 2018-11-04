@@ -29,6 +29,10 @@ public class GetewayApplication {
             .filters(f->f.rewritePath("/review/(?<segment>.*)","/review/${segment}"))
             .uri(reviewEnpoint))
         .route(p -> p
+            .path("/login/**")
+            .filters(f->f.rewritePath("/login/(?<segment>.*)","/login/${segment}"))
+            .uri(reviewEnpoint))
+        .route(p -> p
             .path("/products/**")
             .filters(f->f.rewritePath("/products/(?<segment>.*)","/products/${segment}"))
             .uri(productEnpoint))

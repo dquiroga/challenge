@@ -29,14 +29,6 @@ public class Review implements Serializable {
     this.productId = productId;
   }
 
-  public String getProductiId() {
-    return productId;
-  }
-
-  public Review setProductiId(String prorductiId) {
-    this.productId = prorductiId;
-    return this;
-  }
 
   public float getAverageReviewScore() {
     return averageReviewScore;
@@ -60,8 +52,9 @@ public class Review implements Serializable {
     return id;
   }
 
-  public void setId(Long id) {
+  public Review setId(Long id) {
     this.id = id;
+    return this;
   }
 
   public String getProductId() {
