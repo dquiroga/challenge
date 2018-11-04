@@ -9,11 +9,13 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+@EnableWebSecurity
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
   @Autowired
@@ -25,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     http.csrf().disable().authorizeRequests()
         .antMatchers("/swagger","/h2-console/**","/webjars/**","/swagger-ui.html", "/swagger-resources/**", "/v2/api-docs" ).permitAll() //
         .antMatchers(HttpMethod.POST, "/login").permitAll()
-        .antMatchers(HttpMethod.GET, "/review/**").permitAll()
+        .antMatchers(HttpMethod.GET, "/**").permitAll()
         .antMatchers(HttpMethod.GET, "/h2-console/**").permitAll()
         .anyRequest().authenticated()
         .and()

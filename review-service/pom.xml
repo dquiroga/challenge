@@ -37,21 +37,16 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.0</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.auth0/auth0 -->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>auth0</artifactId>
             <version>1.5.0</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.auth0/auth0-spring-security-api -->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>auth0-spring-security-api</artifactId>
@@ -64,10 +59,18 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>5.0.5.RELEASE</version>
-            <scope>test</scope>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${io.springfox.springfox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${io.springfox.springfox.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
         </dependency>
     </dependencies>
 </project>
