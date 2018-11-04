@@ -18,8 +18,6 @@
         <module>review-service</module>
         <module>product-service</module>
         <module>gateway-api</module>
-        <module>registry-service</module>
-        <module>auth-service</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,6 +27,7 @@
         <spring-cloud.version>1.2.7.RELEASE</spring-cloud.version>
         <commons-config.version>1.10</commons-config.version>
         <rxjava.version>1.2.10</rxjava.version>
+        <io.springfox.springfox.version>2.8.0</io.springfox.springfox.version>
     </properties>
     <dependencyManagement>
         <dependencies>

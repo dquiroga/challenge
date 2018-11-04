@@ -25,16 +25,16 @@ public class GetewayApplication {
   public RouteLocator myRoutes(RouteLocatorBuilder builder) {
     return builder.routes()
         .route(p -> p
-            .path("/review/**")
-            .filters(f->f.rewritePath("/review/(?<segment>.*)","/review/${segment}"))
+            .path("/api/review/**")
+            .filters(f->f.rewritePath("/api/review/(?<segment>.*)","/api/review/${segment}"))
             .uri(reviewEnpoint))
         .route(p -> p
             .path("/login/**")
             .filters(f->f.rewritePath("/login/(?<segment>.*)","/login/${segment}"))
             .uri(reviewEnpoint))
         .route(p -> p
-            .path("/products/**")
-            .filters(f->f.rewritePath("/products/(?<segment>.*)","/products/${segment}"))
+            .path("/api/products/**")
+            .filters(f->f.rewritePath("/api/products/(?<segment>.*)","/api/products/${segment}"))
             .uri(productEnpoint))
         .build();
   }

@@ -12,5 +12,6 @@ public interface ClientService {
    * @param Id - resources id
    * @return
    */
-  CompletableFuture<JSONObject> get(String Id);
+  CompletableFuture<JSONObject> asyncGet(String Id);
+  JSONObject get(String Id);
 }
