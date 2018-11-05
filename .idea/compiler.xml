@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth-service" />
         <module name="gateway-api" />
         <module name="product-service" />
-        <module name="registry-service" />
         <module name="reviews-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-service" target="1.8" />
+      <module name="registry-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

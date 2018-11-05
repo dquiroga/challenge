@@ -1,4 +1,5 @@
 # Adidas Coding Challenge
+# Adidas Coding Challenge
 This project is was made as a part of Adidas selection process.
 # Technologies 
 1. Java 8

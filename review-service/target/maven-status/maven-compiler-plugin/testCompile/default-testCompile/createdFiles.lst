@@ -1,7 +1,0 @@
-com/adidas/reviews/service/impl/ReviewServiceImplTest.class
-com/adidas/reviews/repository/ReviewRepositoryTest.class
-com/adidas/reviews/service/impl/DefaultUserDetailsServiceImplTest.class
-com/adidas/reviews/ProductReviewApplicationTest.class
-com/adidas/reviews/service/impl/DefaultUserDetailsServiceImplTest$DefaultUserDetailsServiceImplTestContextConfiguration.class
-com/adidas/reviews/service/impl/ReviewServiceImplTest$ReviewServiceImplTestContextConfiguration.class
-com/adidas/reviews/controller/ReviewControllerTest.class

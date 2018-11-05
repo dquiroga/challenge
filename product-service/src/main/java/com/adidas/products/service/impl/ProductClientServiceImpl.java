@@ -43,17 +43,23 @@ public class ProductClientServiceImpl implements ClientService {
 
   @Async
   @Override
-  public CompletableFuture<JSONObject> get(String Id) {
+  public CompletableFuture<JSONObject> asyncGet(String Id) {
     String url = String.format(productApiUrl.concat("/%s"), Id);
     JSONObject json = new JSONObject();
-    logger.info("[ASYNC] Calling Adidas endpoint with URL => {} ",url);
+    logger.info("[ASYNC] Calling Adidas endpoint with URL => {} ", url);
     ResponseEntity<String> response =
         restTemplate.exchange(
             url, HttpMethod.GET, new HttpEntity(null, getHeaders()), String.class);
-    logger.info("[ASYNC] Responose Status from Adidas endpoint with URL => {}  - {} ", url, response.getStatusCode() );
-
-    if (response.getStatusCode().is2xxSuccessful()) json = new JSONObject(response.getBody());
-
+    logger.info("[ASYNC] Responose Status from Adidas endpoint with URL => {}  - {} ", url, response.getStatusCode());
+    if (response.getStatusCode().is2xxSuccessful()) {
+      json = new JSONObject(response.getBody());
+    }
     return CompletableFuture.completedFuture(json);
+  }
+
+
+  @Override
+  public JSONObject get(String Id) {
+    return null;
   }
 }
