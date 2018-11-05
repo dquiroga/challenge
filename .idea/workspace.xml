@@ -2,33 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee991ec-2f40-4b8c-ba2d-16f597357646" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-api/src/main/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-api/src/main/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-api/src/main/java/com/adidas/gateway/GetewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-api/src/main/java/com/adidas/gateway/GetewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-api/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/ProductApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/OrchestrationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/impl/OrchestrationServiceimpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/impl/ProductClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/impl/ProductClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/impl/ReviewClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/service/impl/ReviewClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/src/main/java/com/adidas/registry/ServiceRegistryApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-api/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/classes/application-base.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/classes/application-ci.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/classes/application-test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/TEST-com.adidas.reviews.controller.ReviewControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/TEST-com.adidas.reviews.repository.ReviewRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/TEST-com.adidas.reviews.service.impl.DefaultUserDetailsServiceImplTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/TEST-com.adidas.reviews.service.impl.ReviewServiceImplTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/com.adidas.reviews.controller.ReviewControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/com.adidas.reviews.repository.ReviewRepositoryTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/com.adidas.reviews.service.impl.DefaultUserDetailsServiceImplTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/review-service/target/surefire-reports/com.adidas.reviews.service.impl.ReviewServiceImplTest.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/registry-service/target/" />
     <ignored path="$PROJECT_DIR$/gateway-api/target/" />
@@ -66,6 +61,7 @@
           <entry key="class" value="22" />
           <entry key="java" value="134" />
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
           <entry key="properties" value="19" />
           <entry key="sql" value="2" />
           <entry key="xml" value="11" />
@@ -77,6 +73,7 @@
           <entry key="Dockerfile" value="3" />
           <entry key="JAVA" value="134" />
           <entry key="JSON" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Properties" value="6" />
           <entry key="SQL" value="2" />
@@ -175,10 +172,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-api/src/main/java/com/adidas/gateway/GetewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="181">
               <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,11 +184,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="465">
+                <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gateway-api/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+              <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -201,18 +210,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/review-service/src/main/java/com/adidas/reviews/ProductReviewApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -243,7 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/review-service/src/main/java/com/adidas/reviews/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/review-service/src/main/java/com/adidas/reviews/model/User.java" />
         <option value="$PROJECT_DIR$/review-service/src/main/java/com/adidas/reviews/model/Review.java" />
         <option value="$PROJECT_DIR$/review-service/src/test/java/com/adidas/reviews/repository/ReviewRepository.java" />
@@ -294,6 +290,7 @@
         <option value="$PROJECT_DIR$/product-service/src/main/java/com/adidas/products/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/gateway-api/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-api/src/main/java/com/adidas/gateway/GetewayApplication.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -402,7 +399,7 @@
     <property name="SearchEverywhereHistoryKey" value="Revi&#9;FILE&#9;file:///Users/damian/Hyp3r/challenge/review-service/src/main/java/com/adidas/reviews/controller/ReviewController.java&#10;Revie&#9;FILE&#9;file:///Users/damian/Hyp3r/challenge/review-service/src/main/java/com/adidas/reviews/controller/ReviewController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541372504312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541386730017" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -625,13 +622,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49148000" />
+    <option name="totallyTimeSpent" value="49589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -655,7 +652,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.27349398" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.27349398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -989,7 +986,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/review-service/src/main/java/com/adidas/reviews/controller/ExtendWith.java" />
     <entry file="file://$PROJECT_DIR$/review-service/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1369,17 +1365,27 @@
     <entry file="file://$PROJECT_DIR$/gateway-api/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gateway-api/src/main/java/com/adidas/gateway/GetewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="181">
           <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="465">
+            <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
